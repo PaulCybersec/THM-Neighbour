@@ -16,7 +16,4 @@ Thumbs.db
 *.tmp
 *.bak
 
-#images
-*.png
-
 *.obsidian
