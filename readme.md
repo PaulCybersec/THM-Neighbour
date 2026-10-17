@@ -5,17 +5,17 @@
 On nous fournit une adresse IP et pour seule consigne de nous y connecter via le web : `http://10.128.180.33`.  
 Pas d’énumération nécessaire ici : on ouvre directement l’URL dans le navigateur et on tombe sur une page de login.
 
-![[Pasted image 20261017105617.png]]
+![page de login](login.png)
 ### Accès initial
 
 Avant toute tentative, un réflexe simple : consulter le code source de la page (clic droit → « Afficher le code source », ou `F12`).  
 On y trouve un commentaire laissé par un développeur contenant des identifiants de connexion, ainsi qu’une mention indiquant que le compte `admin` est censé être hors d’accès.
 
-![[Pasted image 20261017110005.png]]
+![source](source.png)
 
 On utilise les identifiants `guest:guest` pour se connecter. On arrive alors sur une page de profil :
 
-![[Pasted image 20261017110443.png]]
+![guest](guest_page.png)
 
 L’URL est la suivante :  
 `http://10.128.180.33/profile.php?user=guest`
@@ -29,7 +29,7 @@ On remplace donc simplement la valeur du paramètre par `admin` :
 
 Et on accède au profil administrateur — ainsi qu’au flag.
 
-![[Pasted image 20261017110845.png]]
+![admin_page](admin_page.png)
 
 ### Conclusion
 
